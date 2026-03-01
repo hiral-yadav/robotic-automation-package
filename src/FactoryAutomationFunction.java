@@ -7,18 +7,18 @@ public class FactoryAutomationFunction {
     private static final Long WEIGHT_LIMIT= 20L;
 
     public static void main(String[] args) throws Exception{
-        System.out.println("Please enter width of the package:");
+        System.out.println("Please enter width of the package in cm:");
 
         Scanner scanner = new Scanner(System.in);
         Long width = scanner.nextLong();
 
-        System.out.println("Please enter height of the package:");
+        System.out.println("Please enter height of the package in cm:");
         Long height = scanner.nextLong();
 
-        System.out.println("Please enter length of the package:");
+        System.out.println("Please enter length of the package in cm:");
         Long length = scanner.nextLong();
 
-        System.out.println("Please enter mass of the package:");
+        System.out.println("Please enter mass of the package in kg:");
         Long mass = scanner.nextLong();
 
         String stack = sort(width, height, length, mass);
